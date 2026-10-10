@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="SousaShop — uma seleção de produtos e ofertas para você conferir na Shopee.">
+  <title>SousaShop | Ofertas escolhidas para você</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">OFERTAS E ACHADOS • CONFIRA OS LINKS</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="SousaShop página inicial"><span class="brand-mark">S</span><span>Sousa<span class="red">Shop</span><small>ACHADOS • OFERTAS • ESTILO</small></span></a>
+    <a class="header-link" href="#produtos">Ver produtos <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> SUA PRÓXIMA DESCOBERTA ESTÁ AQUI</p>
+        <h1>Boas escolhas.<br><span class="red">Melhores achados.</span></h1>
+        <p class="hero-text">Uma seleção de produtos para facilitar sua busca. Encontre seu próximo favorito e confira os detalhes na Shopee.</p>
+        <a class="primary-button" href="#produtos">Explorar produtos <span aria-hidden="true">↓</span></a>
+        <p class="microcopy">Seleção independente • Compra pela Shopee</p>
+      </div>
+      <div class="hero-art" aria-label="Destaque visual da loja">
+        <div class="art-glow"></div>
+        <div class="art-card card-back"><span>SS / FINDS</span><b>01</b></div>
+        <div class="art-card card-front"><span class="art-label">SOUSASHOP SELECTION</span><div class="art-symbol">S<span>S</span></div><strong>SEU PRÓXIMO<br>ACHADO.</strong><span class="art-bottom">ESCOLHIDO COM ATENÇÃO ↗</span></div>
+        <div class="floating-tag">NOVOS ACHADOS<br><b>POR AQUI</b></div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Informações">
+      <div><span class="benefit-icon">↗</span><span><b>Compra segura</b><small>Finalize na Shopee</small></span></div>
+      <div><span class="benefit-icon">✦</span><span><b>Achados selecionados</b><small>Produtos para descobrir</small></span></div>
+      <div><span class="benefit-icon">♡</span><span><b>Prático e direto</b><small>Um clique até a oferta</small></span></div>
+    </section>
+
+    <section class="products-section" id="produtos">
+      <div class="section-heading">
+        <div><p class="eyebrow">VITRINE SOUSASHOP</p><h2>Encontre seu próximo <span class="red">favorito.</span></h2></div>
+        <p class="section-note">Os links dos produtos podem ser editados no arquivo <code>products.js</code>.</p>
+      </div>
+      <div class="toolbar">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar produtos..." aria-label="Buscar produtos"></label>
+        <div id="filters" class="filters" aria-label="Filtrar por categoria"></div>
+      </div>
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      <p id="empty-state" class="empty-state" hidden>Nenhum produto encontrado. Tente outro termo ou categoria.</p>
+    </section>
+
+    <section class="cta-strip">
+      <div><p class="eyebrow">ACOMPANHE OS ACHADOS</p><h2>Seu próximo favorito pode estar a um clique.</h2></div>
+      <a href="#produtos" class="outline-button">Ver vitrine ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#"><span class="brand-mark">S</span><span>Sousa<span class="red">Shop</span><small>ACHADOS • OFERTAS • ESTILO</small></span></a>
+    <p>© <span id="year"></span> SousaShop. Todos os direitos reservados.</p>
+    <p class="disclosure">Como afiliado, posso receber comissão por compras qualificadas feitas pelos links desta página, sem custo adicional para você. Preços, disponibilidade e condições são definidos pela Shopee e pelo vendedor.</p>
+  </footer>
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
